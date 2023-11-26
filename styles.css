@@ -1,0 +1,409 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&family=Roboto:ital@1&display=swap');
+
+body {
+    font-size: 16px;
+    padding: 0px;
+    margin: 0px;
+}
+
+#container {
+    position: relative;
+}
+
+h2 {
+    left: 10%;
+    top: 35%;
+    text-align: center;
+    color: white;
+    margin: 0;
+    position: absolute;
+    font-size: 3em;
+    font-family: 'Playfair Display', serif;
+    font-weight: lighter;
+}
+
+#profileImg {
+    max-width: 90%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    margin-top: 6%;
+}
+
+h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2em;
+    margin: 0px;
+    padding: 0px;
+    margin-top: 10%;
+}
+
+#headerText {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+#headerIcons {
+    display: flex;
+    justify-content: center;
+}
+
+#headerIcons img {
+    max-width: 30px;
+    height: auto;
+    margin: 4%;
+}
+
+main {
+    margin-top: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#MyProjectContainer {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(6, 1fr);
+    width: 90%;
+    height: auto;
+}
+
+.project {
+    margin-top: 10%;
+    display: flex;
+    width: 100%;
+    height: auto;
+    color: white;
+    flex-direction: column;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+
+
+
+}
+
+.project:hover {
+    transform: scale(1.06);
+}
+
+#screenshotProject {
+    background-color: green;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+#screenshotProject p {
+    font-size: 2em;
+    font-family: 'Playfair Display', serif;
+}
+
+#containerProjectDescription {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px;
+}
+
+.projectTitle {
+    font-family: 'Playfair Display', serif;
+    font-size: 1em;
+    color: black;
+    margin: 0;
+    /* Elimina el margen para evitar espacio adicional */
+}
+
+#projectDescription {
+    color: black;
+}
+
+
+#containerProjectDescription img {
+    max-width: 20px;
+    height: auto;
+    margin-right: 10px;
+}
+
+#iconsProjects {
+    display: flex;
+    align-items: center;
+}
+
+/* Añade un margen a la izquierda de los íconos para moverlos hacia la izquierda */
+#iconsProjects img {
+    margin-left: -5px;
+    /* Ajusta el valor según sea necesario */
+}
+
+#projectDescription {
+    margin-left: 10px;
+}
+
+footer {
+    background-color: RGB(8, 145, 178);
+    color: white;
+    margin-top: 40%;
+}
+
+#contactContainer {
+    display: flex;
+    flex-direction: column;
+
+
+}
+
+h3 {
+    font-family: 'Playfair Display', serif;
+    align-self: center;
+    font-size: 2em;
+    padding: 0px;
+    margin: 0px;
+    font-weight: normal;
+    margin-top: 6%;
+}
+
+#contactContainer p {
+    margin-left: 5%;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+
+#contactP {
+    font-size: 1.4em;
+    margin-left: 5%;
+}
+
+#contactIcons {
+    display: flex;
+    justify-content: center;
+}
+
+#contactIcons img {
+    max-width: 40px;
+    margin: 3%;
+}
+
+
+#headerText p {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: min(1em);
+}
+
+@media (min-width: 600px) {
+    #profileImg {
+
+        max-width: 40%;
+        height: auto;
+        display: block;
+        margin: 0 auto;
+        top: 30px;
+        left: 5%;
+        position: absolute;
+    }
+
+    #headerText h1 {
+        color: black;
+        position: relative;
+        left: 40%;
+        top: 30px
+    }
+
+    #headerIcons {
+        display: none;
+    }
+
+    #headerText {
+
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        width: 85%;
+        min-height: 450px;
+        max-height: 500px;
+        align-self: center;
+        margin: auto;
+        margin-top: 15%;
+
+    }
+
+
+    #headerText p {
+        position: relative;
+        width: 200px;
+        left: 50%;
+        text-align: start;
+        margin-top: 50px;
+    }
+
+    h1 {
+        font-family: 'Playfair Display', serif;
+        font-size: 2em;
+        margin: 0px;
+        padding: 0px;
+        margin-top: 0px;
+        align-self: flex-start;
+        margin-left: 10%;
+    }
+
+    #MyProjectContainer {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(3, 1fr);
+        gap: 30px;
+        width: 90%;
+        height: auto;
+    }
+
+    #contactContainer {
+        display: flex;
+    }
+
+    #contactIcons {
+        align-self: flex-start;
+        margin-left: 10%;
+        gap: 20PX;
+    }
+
+    h3 {
+        align-self: flex-start;
+        margin-left: 5%;
+    }
+
+    #footerimg {
+        position: absolute;
+        width: 350px;
+        height: auto;
+        right: 20px;
+        margin: 0px;
+        margin-top: 30px;
+    }
+}
+
+@media (min-width: 1024px) {
+    #profileImg {
+        max-width: 30%;
+        top: 5%;
+        left: 5%;
+        position: absolute;
+    }
+
+    #headerText h1 {
+        color: black;
+        position: relative;
+        left: 40%;
+        top: 30px;
+    }
+
+    #headerIcons {
+        display: block;
+        margin: 0px;
+    }
+
+    #headerText {
+
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        width: 85%;
+        min-height: 600px;
+        align-self: center;
+        margin: auto;
+        margin-top: 5%;
+    }
+
+    #headerText p {
+        position: relative;
+        width: 50%;
+        left: 34%;
+        margin-top: 50px;
+        font-size: 2em;
+    }
+
+
+    #headerText h1 {
+        color: black;
+        position: relative;
+        left: 24%;
+        top: 40px;
+        font-size: 3em;
+    }
+
+    #headerIcons img {
+        max-width: 40px;
+        height: auto;
+        margin: 1%;
+
+    }
+
+    #headerIcons {
+        position: relative;
+        left: 35%;
+        bottom: 0px;
+    }
+
+    h2 {
+        left: 7%;
+        top: 65%;
+    }
+
+    main {
+        margin: 6%;
+    }
+
+    #myworkH1 {
+        margin-left: 0px;
+        font-size: 3em;
+    }
+
+    #MyProjectContainer {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        width: 90%;
+
+
+    }
+
+    .project {
+        width: 100%;
+        height: 400px;
+    }
+
+    #screenshotProject {
+        height: 70%;
+        justify-content: center;
+    }
+
+    #contactContainer {
+
+        display: flex;
+        height: 900px;
+    }
+
+    footer {
+        margin: 0px;
+    }
+
+
+    #footerimg {
+        position: absolute;
+        min-width: 40%;
+        height: auto;
+        right: 10%;
+        margin: 0px;
+        margin-top: 65px;
+    }
+
+    h3 {
+        font-size: 3em;
+    }
+
+    #contactContainer p {
+
+        font-size: 2em;
+    }
+
+    #contactIcons {
+        margin-left: 8%;
+        gap: 40px;
+    }
+}
